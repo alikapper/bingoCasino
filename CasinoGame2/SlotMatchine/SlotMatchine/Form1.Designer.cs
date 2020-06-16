@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace SlotMatchine
 {
     partial class Form1
     {
@@ -42,75 +42,75 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(49, 259);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 203);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(410, 259);
+            this.pictureBox2.Location = new System.Drawing.Point(370, 203);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(213, 141);
+            this.pictureBox2.Size = new System.Drawing.Size(188, 177);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(788, 259);
+            this.pictureBox3.Location = new System.Drawing.Point(639, 203);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(213, 141);
+            this.pictureBox3.Size = new System.Drawing.Size(188, 177);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 97);
+            this.label1.Location = new System.Drawing.Point(50, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 29);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 4;
             this.label1.Text = "Money:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 97);
+            this.label2.Location = new System.Drawing.Point(244, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 29);
-            this.label2.TabIndex = 6;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Bet:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(508, 97);
+            this.label3.Location = new System.Drawing.Point(434, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 29);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Win:";
+            this.label3.Size = new System.Drawing.Size(79, 29);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Win: 0";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(377, 489);
+            this.button1.Location = new System.Drawing.Point(333, 476);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 82);
-            this.button1.TabIndex = 8;
+            this.button1.Size = new System.Drawing.Size(292, 61);
+            this.button1.TabIndex = 7;
             this.button1.Text = "Spin";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 686);
+            this.ClientSize = new System.Drawing.Size(976, 583);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace SlotMatchine
 {
     public partial class Form1 : Form
     {
@@ -16,26 +16,31 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        // DECLARING EACH ITEM
-        public static int p1;
-        public static int p2;
-        public static int p3;
 
         // DECLARING TOTAL, BET AND CREDITS
         public static long credits = 100;
         public static long total = 0;
         public static int bet = 5;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello");
-        }
 
+        // DECLARING EACH ITEM
+        public static int p1;
+        public static int p2;
+        public static int p3;
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox1.Image = Image.FromFile("2.png");
+            pictureBox2.Image = Image.FromFile("3.png");
+            pictureBox3.Image = Image.FromFile("1.png");
+        }
 
-            pictureBox1.Image = Image.FromFile("1.png");
-            pictureBox2.Image = Image.FromFile("2.png");
-            pictureBox3.Image = Image.FromFile("3.png");
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
         // GENERATES RANDOM NUMBERS
         public static class IntUtil
@@ -52,18 +57,12 @@ namespace WindowsFormsApp1
                 return random.Next(min, max);
             }
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (credits >= bet)
             {
                 credits = credits - bet;
-                label1.Text = "Money: " + credits.ToString();
+                label1.Text = "Credits: " + credits.ToString();
 
                 for (var i = 0; i < 10; i++)
                 {
@@ -96,9 +95,8 @@ namespace WindowsFormsApp1
 
                 credits = credits + total;
                 label3.Text = "Win: " + total.ToString();
-                label1.Text = "Money: " + credits.ToString();
+                label1.Text = "Credits: " + credits.ToString();
             }
-
         }
     }
 }
