@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cXajUCX8TtKYaAIXZPB9Zbwu7K1FbdjF5glr5NFsRUu7Svd9LKYF7AsDfG8NznkkFcB8KpSISrKz0t/5vxnuiQ==",
+  "dgSpecHash": "A73ReW1VSZ6HVuC3BT4o0OuQtBW28WR/RtM/W5+3kPRJk+3mqVUGs2oZ7Ob5BiNSj5xeE8PQil2Tnrzwo2Ch5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\R_Maz\\Documents\\GitHub\\bingoCasino\\CasinoGame2\\CasinoGame2\\CasinoGame2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\co_mo\\OneDrive\\Documents\\GitHub\\bingoCasino\\CasinoGame2\\CasinoGame2\\CasinoGame2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\co_mo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
